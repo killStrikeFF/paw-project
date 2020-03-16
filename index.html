@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Котейки</title>
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Rubik:500,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/styles/main.min.css">
+</head>
+
+<body>
+
+   <!-- section header -->
+   <header class="header">
+      <div class="container">
+         <div class="header__body">
+            <div class="header__logo">
+               <img class="header__img" src="/img/header/лого.png" alt="logo">
+            </div>
+            <nav class="header__nav">
+               <ul class="header__list">
+                  <li><a href="#" class="header__link">Почему мы?</a></li>
+                  <li><a href="#" class="header__link">Номера</a></li>
+                  <li><a href="#" class="header__link">Отзывы</a></li>
+                  <li><a href="#" class="header__link">Как нас найти</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+
+   <!-- main section -->
+   <main class="main">
+      <div class="container">
+         <div class="main__body">
+
+            <div class="container__filter">
+               <h2 class="main__heading">Наши номера</h2>
+               <div class="filter">
+                  <h5 class="filter__head">Цена за сутки, р</h5>
+                  <div class="filter__price">
+                     <input type="text" value="" class="filter__from" placeholder="от 100">
+                     <input type="text" value="" class="filter__to" placeholder="до 600">
+                  </div>
+                  <h5 class="filter__head">Площадь</h5>
+                  <div class="filter__square">
+                     <p class="filter__value"><input type="checkbox" class="filter__area" value="0.63"> 0,63 м2</p>
+                     <p class="filter__value"><input type="checkbox" class="filter__area" value="0.90"> 0,90 м2</p>
+                     <p class="filter__value"><input type="checkbox" class="filter__area" value="1.13"> 1,13 м2</p>
+                     <p class="filter__value"><input type="checkbox" class="filter__area" value="1.56"> 1,56 м2</p>
+                     <p class="filter__value"><input type="checkbox" class="filter__area" value="2.56"> 2,56 м2</p>
+                     <p class="filter__value"><input type="checkbox" class="filter__area" value="2.88"> 2,88 м2</p>
+                  </div>
+                  <h5 class="filter__head">Оснащение номера</h5>
+                  <div class="filter__include">
+                     <p class="filter__value"><input type="checkbox" class="filter__feature" value="10">Пустой номер</p>
+                     <p class="filter__value"><input type="checkbox" class="filter__feature" value="20">Лежак</p>
+                     <p class="filter__value"><input type="checkbox" class="filter__feature" value="30">Когтеточка</p>
+                     <p class="filter__value"><input type="checkbox" class="filter__feature" value="40">Игровой комплекс
+                     </p>
+                     <p class="filter__value"><input type="checkbox" class="filter__feature" value="50">Домик</p>
+                  </div>
+                  <button class="filter__accept">Применить</button>
+                  <button class="filter__clear">Сбросить фильтр</button>
+               </div>
+            </div>
+
+            <div class="container__card">
+               <div class="sort">
+                  <div class="srot__item">
+                     <div class="sort__title active">
+                        <img class="sort__icon" src="/img/cards/icons/up.svg" alt="up">
+                        <p class="sort__text">По площади</p>
+                     </div>
+                     <div class="sort__content disable">
+                        <div class="sort__title">
+                           <img class="sort__icon" src="/img/cards/icons/down.svg" alt="down">
+                           <p class="sort__text">По площади</p>
+                        </div>
+                        <div class="sort__title">
+                           <img class="sort__icon" src="/img/cards/icons/up.svg" alt="up">
+                           <p class="sort__text">По цене</p>
+                        </div>
+                        <div class="sort__title">
+                           <img class="sort__icon" src="/img/cards/icons/down.svg" alt="down">
+                           <p class="sort__text">По площади</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="cards">
+
+                  <!-- cards item -->
+                  <div class="cards__item" data-square="0.63" data-price="100" data-feature-empty="1"
+                     data-feature-lay="0" data-feature-claw="0" data-feature-play="0" data-feature-house="0">
+                     <img class="cards__image" src="/img/cards/1_cat.jpg" alt="1_cat">
+                     <div class="cards__info">
+                        <h4 class="cards__heading">Эконом</h4>
+                        <p class="cards__size">Размеры (ШхГхВ) - 90х70х180 см</p>
+                        <p class="cards__square">Площадь - 0,63 м2</p>
+                        <p class="cards__feature">
+                           Оснащение номера
+                           <img class="cards__icon" src="/img/cards/icons/1.svg" alt="icons">
+                        </p>
+                        <p class="cards__prise">Цена за сутки: <span class="cards__col">100</span><span
+                              class="cards__total">Р</span></p>
+                        <button class="cards__button">Забронировать <img class="cards__paw" src="/img/cards/paw.png"
+                              alt="paw"></button>
+                     </div>
+                  </div>
+
+                  <!-- cards item -->
+                  <div class="cards__item" data-square="0.90" data-price="200" data-feature-empty="0"
+                     data-feature-lay="1" data-feature-claw="1" data-feature-play="0" data-feature-house="0">
+                     <img class="cards__image" src="/img/cards/2_cat.jpg" alt="2_cat">
+                     <div class="cards__info">
+                        <h4 class="cards__heading">Эконом плюс</h4>
+                        <p class="cards__size">Размеры (ШхГхВ) - 90х100х180 см</p>
+                        <p class="cards__square">Площадь - 0,90 м2</p>
+                        <p class="cards__feature">
+                           Оснащение номера
+                           <img class="cards__icon" src="/img/cards/icons/2.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/3.svg" alt="icons">
+                        </p>
+                        <p class="cards__prise">Цена за сутки: <span class="cards__col">200</span><span
+                              class="cards__total">Р</span></p>
+                        <button class="cards__button">Забронировать <img class="cards__paw" src="/img/cards/paw.png"
+                              alt="paw"></button>
+                     </div>
+                  </div>
+
+                  <!-- cards item -->
+                  <div class="cards__item" data-square="1.13" data-price="250" data-feature-empty="0"
+                     data-feature-lay="1" data-feature-claw="1" data-feature-play="1" data-feature-house="">
+                     <img class="cards__image" src="/img/cards/3_cat.jpg" alt="3_cat">
+                     <div class="cards__info">
+                        <h4 class="cards__heading">Комфорт</h4>
+                        <p class="cards__size">Размеры (ШхГхВ) - 100х125х180 см</p>
+                        <p class="cards__square">Площадь - 1,13 м2</p>
+                        <p class="cards__feature">
+                           Оснащение номера
+                           <img class="cards__icon" src="/img/cards/icons/2.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/3.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/4.svg" alt="icons">
+                        </p>
+                        <p class="cards__prise">Цена за сутки: <span class="cards__col">250</span><span
+                              class="cards__total">Р</span></p>
+                        <button class="cards__button">Забронировать <img class="cards__paw" src="/img/cards/paw.png"
+                              alt="paw"></button>
+                     </div>
+                  </div>
+
+                  <!-- cards item -->
+                  <div class="cards__item" data-square="1.56" data-price="350" data-feature-empty="0"
+                     data-feature-lay="1" data-feature-claw="1" data-feature-play="1" data-feature-house="0">
+                     <img class="cards__image" src="/img/cards/4_cat.jpg" alt="4_cat">
+                     <div class="cards__info">
+                        <h4 class="cards__heading">Сьют</h4>
+                        <p class="cards__size">Размеры (ШхГхВ) - 125х125х180 см</p>
+                        <p class="cards__square">Площадь - 1,56 м2</p>
+                        <p class="cards__feature">
+                           Оснащение номера
+                           <img class="cards__icon" src="/img/cards/icons/2.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/3.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/4.svg" alt="icons">
+                        </p>
+                        <p class="cards__prise">Цена за сутки: <span class="cards__col">350</span><span
+                              class="cards__total">Р</span></p>
+                        <button class="cards__button">Забронировать <img class="cards__paw" src="/img/cards/paw.png"
+                              alt="paw"></button>
+                     </div>
+                  </div>
+
+                  <!-- cards item -->
+                  <div class="cards__item" data-square="2.56" data-price="500" data-feature-empty="0"
+                     data-feature-lay="1" data-feature-claw="1" data-feature-play="1" data-feature-house="1">
+                     <img class="cards__image" src="/img/cards/5_cat.jpg" alt="5_cat">
+                     <div class="cards__info">
+                        <h4 class="cards__heading">Люкс</h4>
+                        <p class="cards__size">Размеры (ШхГхВ) - 160х160х180 см</p>
+                        <p class="cards__square">Площадь - 2,56 м2</p>
+                        <p class="cards__feature">
+                           Оснащение номера
+                           <img class="cards__icon" src="/img/cards/icons/2.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/3.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/4.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/5.svg" alt="icons">
+                        </p>
+                        <p class="cards__prise">Цена за сутки: <span class="cards__col">500</span><span
+                              class="cards__total">Р</span></p>
+                        <button class="cards__button">Забронировать <img class="cards__paw" src="/img/cards/paw.png"
+                              alt="paw"></button>
+                     </div>
+                  </div>
+
+                  <!-- cards item -->
+                  <div class="cards__item" data-square="2.88" data-price="600" data-feature-empty="0"
+                     data-feature-lay="1" data-feature-claw="1" data-feature-play="1" data-feature-house="1">
+                     <img class="cards__image" src="/img/cards/6_cat.jpg" alt="6_cat">
+                     <div class="cards__info">
+                        <h4 class="cards__heading">Супер-Люкс</h4>
+                        <p class="cards__size">Размеры (ШхГхВ) - 180х160х180 см</p>
+                        <p class="cards__square">Площадь - 2,88 м2</p>
+                        <p class="cards__feature">
+                           Оснащение номера
+                           <img class="cards__icon" src="/img/cards/icons/2.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/3.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/4.svg" alt="icons">
+                           <img class="cards__icon" src="/img/cards/icons/5.svg" alt="icons">
+                        </p>
+                        <p class="cards__prise">Цена за сутки: <span class="cards__col">600</span><span
+                              class="cards__total">Р</span></p>
+                        <button class="cards__button">Забронировать <img class="cards__paw" src="/img/cards/paw.png"
+                              alt="paw"></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.min.js"></script>
+   <script src="/js/main.min.js"></script>
+
+   <!-- spoiler -->
+   <script>
+      $(document).ready(function () {
+         $('.active').click(function (event) {
+            $(this).toggleClass('active__mouse');
+
+            $('.sort__content').toggleClass('disable__active').next().slideToggle(300);
+         })
+      });
+   </script>
+</body>
+
+</html>
